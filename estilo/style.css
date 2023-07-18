@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+:root {
+    --font1: 'Courier New', Courier, monospace;
+    --font2: 'Dancing Script', cursive;
+    --font3: 'Bungee Spice', cursive;
+}
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: blueviolet;
+    font-family: var(--font1);
+}
+
+header {
+    background-color: rgb(1, 192, 250);
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1 {
+    font-size: 10vw;
+    font-family: var(--font2);
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    font-family: var(--font2);
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: rgb(167, 240, 49);
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-size: 3.5vw;
+    font-family: var(--font3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: rgb(76, 124, 167);
+    color: rgb(127, 197, 14);
+}
+
+section.imagem {
+    background-color: rgba(95, 158, 160, 0.993);
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    background-color: rgba(10, 231, 247, 0.137);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 2px 2px 0px rgb(0, 0, 0);
+    
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    
+}
+
+footer {
+    color: rgb(245, 242, 242);
+    background-color: rgb(0, 10, 10);
+    text-align: center;
+    padding: 10px;
+}
